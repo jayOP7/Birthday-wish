@@ -385,13 +385,16 @@
 </head>
 
 <body>
+  <audio id="countdownMusic" loop preload="auto">
+    <source src="audio/we_don't_talk_anymore.mp3" type="audio/mpeg">
+  </audio>
 
   <div class="stars" id="stars"></div>
 
   <!-- ============ COUNTDOWN SCREEN ============ -->
   <section id="countdown-screen">
     <!-- <div class="eyebrow">a little something is waiting</div> -->
-    <h1 class="cd-title">Happy Birthday, Babe! ❤️</h1><br>
+    <h1 class="cd-title">Waiting again...</h1><br>
     <!-- <p class="cd-sub">something sweet unlocks the moment your day begins.</p> -->
 
     <div class="timer" id="timer">
@@ -401,7 +404,7 @@
       <div class="block"><span class="num" id="t-secs">00</span><span class="lbl">sec</span></div>
     </div>
 
-    <button id="open-btn">This Is For You 🌸</button>
+    <button id="open-btn">Just Go ahead babe</button>
     <p class="cd-footer" id="cd-footer">Its for you Rucha 🫶.</p>
   </section>
 
@@ -409,22 +412,24 @@
   <section id="main-screen">
     <canvas id="rain-canvas"></canvas>
     <audio id="bgm" loop preload="auto">
-        <source src = "audio/I_Think_They_Call_This_Love_Cover.mp3" type="audio/mpeg">>
+      <source src="audio/Christina_Perri_-_Thousand_years_(mp3.pm).mp3" type="audio/mpeg">>
     </audio>
 
     <div class="content">
-      <h1 class="hero-title">Happiest Birthday<br> Marii Cutudiii</h1>
+      <h1 class="hero-title">2nd Happiest Birthday<br> Marii Cutudiii</h1>
       <!-- <p class="hero-sub">09 . 07 . 2026</p> -->
 
       <div class="divider"></div>
 
       <p class="message">
         <!-- Happiest birthday to you, <strong>babe</strong> ❤️❤️❤️<br><br> -->
-        Happy Birthday, Rucha! 🥹❤️🎂 The countdown is finally over! ✨ I know these past few days haven't been easy,
-        and I'm sorry if I made your smile a little smaller. 💛 But today is <b>Your</b> day, so let's keep all the
-        worries aside for a while. Thank you for every smile, every memory, and for being such a special part of my
-        life. 🌸 I hope this year brings you endless happiness, peace, and lots of reasons to smile. 😊 Now enjoy your
-        day, laugh a little extra, and remember... you are deeply loved. ❤️🎉
+        Happy Birthday again, Rucha! 🥹❤️🎂 Another year has flown by already. If you're reading this, it means I
+        somehow managed to keep a tiny place in a beautiful corner of your heart, and that honestly makes me really
+        happy. ✨ I wrote this a whole year ago without knowing where life would take us. I truly hoped we'd still be
+        together today, celebrating your birthday with our usual little arguments, laughter, and endless teasing. 💛 But
+        if life had different plans for us, that's okay too. I just hope you're doing well, smiling a little more, and
+        living the life you always dreamed of. No matter how much time passes or where we end up, you'll always be one
+        of the most beautiful memories I've ever had, and a part of me will always be quietly cheering for you. 🌸🤍
 
       </p>
       <p class="signoff">— Your Handsome Boiii</p>
@@ -432,12 +437,13 @@
       <div class="gallery-wrap">
         <div class="gallery-label">us, lately</div>
         <div class="gallery" id="gallery"></div>
-        <div class="gallery-hint">Jo Swipe kar side ma,Keva mst happy couple laage→</div>
+        <div class="gallery-hint">Jo Tara last bday ma ketla khus hata →</div>
       </div>
 
       <div class="closing">
-        <p>Babe if you liked it then atleast i deserve your Cutiest ILU and maybe a Pappii 🙄. <br><br></p> <br>Can't
-        wait to See you tomorrow. 🤍</p>
+        <p>And... if you've read this far, could you send me just one simple "Thank you." That's all. It'll let me know
+          this little surprise reached you and that, once upon a time, I was able to make you smile. After that, you
+          don't owe me anything—not even a reply. Take care, babe. <br><br></p> <br>I really loved you...🤍</p>
       </div>
     </div>
 
@@ -460,7 +466,7 @@
     })();
 
     /* ---------- countdown ---------- */
-    const target = new Date("2026-07-09T00:00:00+05:30").getTime();
+    const target = new Date("2027-07-09T00:00:00+05:30").getTime();
     const cdScreen = document.getElementById('countdown-screen');
     const mainScreen = document.getElementById('main-screen');
     const openBtn = document.getElementById('open-btn');
@@ -516,6 +522,17 @@
     /* ---------- gallery ---------- */
     function buildGallery() {
       const photos = [
+
+        "images2/img1.jpg",
+        "images2/img2.jpg",
+        "images2/img3.jpg",
+        "images2/img4.jpg",
+        "images2/img5.jpg",
+        "images2/img6.jpg",
+        "images2/img7.jpg",
+        "images2/img8.jpg",
+        "images2/img9.jpg",
+
         "images/pic1.png",
         "images/pic2.png",
         "images/pic3.jpg",
